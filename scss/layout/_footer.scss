@@ -1,0 +1,22 @@
+.footer {
+  margin: 3rem 0;
+
+  .footer__list {
+    display: flex;
+    list-style: none;
+
+    &-element {
+      margin-right: 2rem;
+    }
+
+    a {
+      color: $color-white;
+      text-decoration: none;
+      font-size: 1.4rem;
+
+      &:hover {
+        color: $color-turquoise;
+      }
+    }
+  }
+}

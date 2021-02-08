@@ -1,0 +1,142 @@
+.about {
+  background-color: #222;
+  color: $color-white;
+  font-size: 1.8rem;
+
+  .svg {
+    @include svg-title;
+
+    .svg_heading {
+      & path:nth-child(2) {
+        // A
+        stroke-dasharray: 536.68;
+        stroke-dashoffset: 536.68;
+      }
+      & path:nth-child(3) {
+        // B
+        stroke-dasharray: 560.15;
+        stroke-dashoffset: 560.15;
+      }
+      & path:nth-child(4) {
+        //O
+        stroke-dasharray: 427.13;
+        stroke-dashoffset: 427.13;
+      }
+      & path:nth-child(5) {
+        //U
+        stroke-dasharray: 411.56;
+        stroke-dashoffset: 411.56;
+      } //T
+      & path:nth-child(6) {
+        stroke-dasharray: 319.72;
+        stroke-dashoffset: 319.72;
+      }
+      & path:nth-child(7) {
+        // M
+        stroke-dasharray: 650.41;
+        stroke-dashoffset: 650.41;
+      }
+      & path:nth-child(8) {
+        //E
+        stroke-dasharray: 495.05;
+        stroke-dashoffset: 495.05;
+      }
+
+      & path:nth-child(10) {
+        //E
+        stroke-dasharray: 495.05;
+        stroke-dashoffset: 495.05;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 8rem;
+    margin-top: 1rem;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+    line-height: 1.4;
+  }
+
+  &__info {
+    margin-top: 5rem;
+    transition: transform 0.3s ease-in;
+    display: flex;
+    justify-content: space-between;
+
+    &-text {
+      width: 48%;
+
+      p {
+        font-size: 1.6rem;
+
+        &:not(first-child) {
+          margin-top: 3rem;
+        }
+      }
+    }
+
+    &-cv {
+      width: 48%;
+      font-size: 1.6rem;
+
+      article {
+        h2 {
+          font-weight: 700;
+          margin: 2rem 0 1rem 0;
+          color: $color-turquoise;
+        }
+
+        &.employment {
+          h2 {
+            margin-top: 0;
+          }
+        }
+
+        h5 {
+          font-size: 2rem;
+          margin: 1rem 0;
+        }
+
+        small {
+          display: block;
+          margin-bottom: 1rem;
+          color: $color-grey-light;
+        }
+
+        ul {
+          margin-left: 1.6rem;
+        }
+      }
+
+      .skills {
+        ul {
+          columns: 2;
+          list-style: none;
+        }
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .about {
+    &__info {
+      display: block;
+      &-text {
+        width: 100%;
+      }
+
+      &-cv {
+        width: 100%;
+        margin-top: 5rem;
+      }
+    }
+  }
+}

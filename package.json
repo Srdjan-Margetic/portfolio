@@ -1,0 +1,14 @@
+{
+  "name": "srdjan",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "main.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/style.css -w"
+  },
+  "author": "Srdjan Margetic",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+a.btn {
+  color: $color-turquoise;
+  border: 1px solid $color-turquoise;
+  text-decoration: none;
+  padding: 1rem 1.8rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.4rem;
+
+  &:hover {
+    background-color: $color-turquoise;
+    color: $grey-noise;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.burger {
+  display: none;
+
+  div {
+    width: 2.5rem;
+    height: 0.2rem;
+    background-color: $color-white;
+    margin-top: 0.5rem;
+  }
+}

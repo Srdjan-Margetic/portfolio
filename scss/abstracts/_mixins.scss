@@ -1,0 +1,67 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin mainBackground {
+  background: url("../../img/bg-noise.png"), $grey-noise;
+  background-size: 30rem 30rem;
+  animation: 250ms steps(10, end) 0s infinite alternate-reverse none running
+    noise-animation;
+}
+
+@mixin svg-title {
+  margin: 5rem 0;
+  text-align: center;
+  .svg_heading {
+    width: 55rem;
+    height: auto;
+  }
+
+  @media screen and (max-width: 1240px) {
+    .svg_heading {
+      width: 50rem;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .svg_heading {
+      width: 45rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 3rem 0;
+    .svg_heading {
+      width: 38rem;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    margin: 3rem 0 0 0;
+
+    .svg_heading {
+      width: 30rem;
+    }
+  }
+
+  @media screen and (max-width: 440px) {
+    .svg_heading {
+      width: 26rem;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .svg_heading {
+      width: 22rem;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .svg_heading {
+      width: 20rem;
+    }
+  }
+}
