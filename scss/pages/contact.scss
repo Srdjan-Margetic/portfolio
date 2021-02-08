@@ -1,0 +1,53 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+
+  article {
+    width: 50%;
+  }
+
+  .form {
+    input {
+      height: 3rem;
+
+      &::placeholder {
+        padding-left: 0.5rem;
+      }
+    }
+
+    .name__area {
+      display: flex;
+      input {
+        width: 50%;
+      }
+    }
+
+    .email__area {
+      input {
+        width: 100%;
+      }
+    }
+
+    .text__area {
+      textarea {
+        width: 100%;
+        min-height: 20rem;
+
+        &::placeholder {
+          padding-left: 0.7rem;
+          padding-top: 0.5rem;
+        }
+      }
+    }
+
+    button {
+      color: #08fdd7;
+      border: 1px solid #08fdd7;
+      background: transparent;
+      text-decoration: none;
+      padding: 1rem 1.8rem;
+      font-size: 1.4rem;
+      letter-spacing: 0.4rem;
+    }
+  }
+}

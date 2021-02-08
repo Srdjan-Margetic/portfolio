@@ -636,3 +636,33 @@ a.btn {
 body {
   background: url(../../img/projects/bedtime.png) !important;
   z-index: 99999; }
+
+.contact {
+  display: flex;
+  justify-content: space-between; }
+  .contact article {
+    width: 50%; }
+  .contact .form input {
+    height: 3rem; }
+    .contact .form input::placeholder {
+      padding-left: 0.5rem; }
+  .contact .form .name__area {
+    display: flex; }
+    .contact .form .name__area input {
+      width: 50%; }
+  .contact .form .email__area input {
+    width: 100%; }
+  .contact .form .text__area textarea {
+    width: 100%;
+    min-height: 20rem; }
+    .contact .form .text__area textarea::placeholder {
+      padding-left: 0.7rem;
+      padding-top: 0.5rem; }
+  .contact .form button {
+    color: #08fdd7;
+    border: 1px solid #08fdd7;
+    background: transparent;
+    text-decoration: none;
+    padding: 1rem 1.8rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem; }
