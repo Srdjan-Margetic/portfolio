@@ -42,19 +42,14 @@
       }
     }
 
-    .confirm__area {
-      display: flex;
-
-      button {
-        color: #08fdd7;
-        border: 1px solid #08fdd7;
-        background: transparent;
-        text-decoration: none;
-        padding: 1rem 1.8rem;
-        font-size: 1.4rem;
-        letter-spacing: 0.4rem;
-        margin-right: 2rem;
-      }
+    button {
+      color: #08fdd7;
+      border: 1px solid #08fdd7;
+      background: transparent;
+      text-decoration: none;
+      padding: 1rem 1.8rem;
+      font-size: 1.4rem;
+      letter-spacing: 0.4rem;
     }
   }
 }
