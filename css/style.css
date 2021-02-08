@@ -647,9 +647,11 @@ body {
     .contact .form input::placeholder {
       padding-left: 0.5rem; }
   .contact .form .name__area {
-    display: flex; }
+    display: flex;
+    justify-content: space-between;
+    gap: 0.2rem; }
     .contact .form .name__area input {
-      width: 50%; }
+      width: 100%; }
   .contact .form .email__area input {
     width: 100%; }
   .contact .form .text__area textarea {
