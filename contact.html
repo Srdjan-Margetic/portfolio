@@ -29,29 +29,27 @@
             </nav>
         </header>
 
-  <section class="contact">
-
-      <article class="form__area">
-        <form class="form" name="contact" method="POST" data-netlify="true">
-            <div class="name__area">
-                <input type="text" name="name"  placeholder="Name" />
-                <input type="text" name="lastname" placeholder="Last name" />
-            </div>
-           
-            <div class="email__area">
-                <input type="email" name="email" placeholder="Email" />
-            </div>       
-            
-            <div class="text__area">
-                <textarea name="message" placeholder="Message"></textarea>
-            </div>
-
-              <button class="btn" type="submit">Send</button>
-        </form>
-      </article>
-      <article class="map__area"></article>
-  </section>
-
+        <section class="contact">
+            <article class="form__area">
+                <form class="form" name="contact" method="POST" data-netlify="true">
+                    <div class="name__area">
+                        <input type="text" name="name"  placeholder="Name" />
+                        <input type="text" name="lastname" placeholder="Last name" />
+                    </div>
+                    <div class="email__area">
+                        <input type="email" name="email" placeholder="Email" />
+                    </div>       
+                    <div class="text__area">
+                        <textarea name="message" placeholder="Message"></textarea>
+                    </div>
+                   <div class="confirm__area">
+                        <button class="btn" type="submit">Send</button>
+                        <div data-netlify-recaptcha="true"></div>
+                   </div>
+                </form>
+            </article>
+            <article class="map__area"></article>
+        </section>
 
         <footer class="footer">
               <ul class="footer__list">
