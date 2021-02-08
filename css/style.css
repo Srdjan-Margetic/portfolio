@@ -660,13 +660,11 @@ body {
     .contact .form .text__area textarea::placeholder {
       padding-left: 0.7rem;
       padding-top: 0.5rem; }
-  .contact .form .confirm__area {
-    display: flex; }
-    .contact .form .confirm__area button {
-      color: #08fdd7;
-      border: 1px solid #08fdd7;
-      background: transparent;
-      text-decoration: none;
-      padding: 1rem 1.8rem;
-      font-size: 1.4rem;
-      letter-spacing: 0.4rem; }
+  .contact .form button {
+    color: #08fdd7;
+    border: 1px solid #08fdd7;
+    background: transparent;
+    text-decoration: none;
+    padding: 1rem 1.8rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.4rem; }
