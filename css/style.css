@@ -63,7 +63,7 @@ a.btn {
   letter-spacing: 0.4rem; }
   a.btn:hover {
     background-color: #08fdd7;
-    color: #1b1c20;
+    color: #222;
     transition: 0.3s ease-in-out; }
 
 .burger {
@@ -144,7 +144,7 @@ a.btn {
     align-items: center;
     font-size: 3.4rem;
     transform: translateX(100%);
-    background: url("../../img/bg-noise.png"), #1b1c20;
+    background: url("../../img/bg-noise.png"), #222;
     background-size: 30rem 30rem;
     animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation;
     background-color: #111; }
@@ -216,7 +216,7 @@ a.btn {
   overflow-x: hidden;
   transition: 0.5s; }
   .wrapper.bg-noise {
-    background: url("../../img/bg-noise.png"), #1b1c20;
+    background: url("../../img/bg-noise.png"), #222;
     background-size: 30rem 30rem;
     animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation; }
   .wrapper .main {
@@ -585,7 +585,8 @@ a.btn {
       .projects section:hover h2 {
         transform: scale(1.02); }
         .projects section:hover h2 a {
-          color: #08fdd7; }
+          color: #08fdd7;
+          color: white; }
     .projects section:hover h2 {
       transform: scale(1.02); }
     .projects section::before {
