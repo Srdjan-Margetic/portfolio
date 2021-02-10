@@ -93,6 +93,12 @@ projectsListCompany.forEach((el) => {
     projectsTitleCompany.textContent = "Company Projects";
     projectsTitleCompany.style.color = "#fff";
   });
+
+  el.addEventListener("touchend", () => {
+    projectsCompany.style.background = `url(../../img/office.jpg) no-repeat center /cover`;
+    projectsTitleCompany.textContent = "Company Projects";
+    projectsTitleCompany.style.color = "#fff";
+  });
 });
 
 projectsListPersonal.forEach((el) => {
@@ -105,6 +111,12 @@ projectsListPersonal.forEach((el) => {
   });
 
   el.addEventListener("mouseout", () => {
+    projectsPersonal.style.background = `url(../../img/home.jpg) no-repeat center /cover`;
+    projectsTitlePersonal.textContent = "Personal Projects";
+    projectsTitlePersonal.style.color = "#fff";
+  });
+
+  el.addEventListener("touchend", () => {
     projectsPersonal.style.background = `url(../../img/home.jpg) no-repeat center /cover`;
     projectsTitlePersonal.textContent = "Personal Projects";
     projectsTitlePersonal.style.color = "#fff";
