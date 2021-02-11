@@ -1,11 +1,11 @@
 .wrapper {
 
-    h1 {
-        color: white;
-        font-size: 8rem;
-        text-align: center;
-    }
-    
+    // h1 {
+    //     color: white;
+    //     font-size: 8rem;
+    //     text-align: center;
+    // }
+
     .contact {
         display: flex;
         justify-content: space-between;
@@ -196,9 +196,9 @@
 
 @media (max-width: 440px) {
     .wrapper {
-        h1 {
-            font-size: 6rem;
-        }
+        // h1 {
+        //     font-size: 6rem;
+        // }
         .contact {
             .form-map__wrapper {
                 .form__area {
