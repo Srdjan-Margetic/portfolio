@@ -140,3 +140,78 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+    .about {
+
+        h1 {
+            font-size: 5rem;
+            text-align: left !important;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .about {
+
+        h1 {
+            font-size: 4rem;
+          }
+
+        &__info {
+            margin-top: 3rem;
+          &-text {    
+       
+            p {
+                font-size: 1.4rem;
+        
+                &:not(first-child) {
+                  margin-top: 2rem;
+                }
+              }
+          }
+      
+          &-cv {
+            font-size: 1.4rem;
+            margin-top: 3rem;
+      
+            article {
+              h5 {
+                font-size: 2rem;
+              }       
+            } 
+          }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .about {
+
+        h1 {
+            font-size: 3.4rem;
+          }
+
+          h2 {
+            font-size: 2rem;
+          }
+
+        &__info {  
+          &-cv {
+      
+            article {
+              h5 {
+                font-size: 1.8rem;
+              }       
+            } 
+          }
+        }
+    }
+}
+
+
+
