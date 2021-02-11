@@ -1,55 +1,252 @@
-.contact {
-  display: flex;
-  justify-content: space-between;
+.wrapper {
 
-  article {
-    width: 50%;
-  }
-
-  .form {
-    input {
-      height: 3rem;
-
-      &::placeholder {
-        padding-left: 0.5rem;
-      }
+    h1 {
+        color: white;
+        font-size: 8rem;
+        text-align: center;
     }
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        gap: 5%;
+        margin: auto 0;
+        transition: transform 0.3s ease-in;
 
-    .name__area {
-      display: flex;
-      justify-content: space-between;
-      gap: 0.2rem;
-      input {
-        width: 100%;
-      }
-    }
 
-    .email__area {
-      input {
-        width: 100%;
-      }
-    }
+        .form-map__wrapper {
+            width: 40%;
 
-    .text__area {
-      textarea {
-        width: 100%;
-        min-height: 20rem;
+            .form__area {
+                width: 100%;
+    
+                .form {
+                    
+                    margin-top: 2rem;
+                    input {
+                      height: 3rem;
+                      background-color: $color-grey-light;
+                      border: 1px solid $light-black;
+    
+                      &:focus {
+                        color: black;
+                        background: white;
+                    }
+                
+                      &::placeholder {
+                        padding-left: 0.5rem;
+                        color: $color-turquoise;
+                      }
+                    }
+                
+                    .name__area {
+                      display: flex;
+                      justify-content: space-between;
+                      gap: 0.2rem;
+                      input {
+                        width: 100%;
+                      }
+                    }
+                
+                    .email__area {
+                      input {
+                        width: 100%;
+                      }
+                    }
+                
+                    .text__area {
+                      textarea {
+                        width: 100%;
+                        height: 32vh;
+                        background-color: $color-grey-light;
+                        border: 1px solid $light-black;
+                        color: white;
+    
+                        &:focus {
+                            color: black;
+                            background: white;
+                        }
+    
+    
+                        &::placeholder {
+                          padding-left: 0.7rem;
+                          padding-top: 0.5rem;
+                          color: $color-turquoise;
+                        }
+                      }
+                    }
+                
+                    button {
+                      color: #08fdd7;
+                      border: 1px solid #08fdd7;
+                      background: transparent;
+                      text-decoration: none;
+                      padding: 1rem 1.8rem;
+                      font-size: 1.4rem;
+                      letter-spacing: 0.4rem;
+                    }
+                }
+            }
 
-        &::placeholder {
-          padding-left: 0.7rem;
-          padding-top: 0.5rem;
+            .personal-informations {
+                width: 100%;
+                color: $color-white;
+                font-size: 1.8rem;
+                text-align: left;
+                transition: .3s ease;
+
+                h2 {
+                    font-size: 3.8rem;
+                    line-height: 1;
+                    padding-bottom: 1.5rem;
+                }
+    
+                a {
+                    color: $color-white;
+                    text-decoration: none;
+                    padding-bottom: 1rem;
+    
+                    &:hover {
+                        color: $color-turquoise;
+                    }
+                }
+            }
         }
-      }
-    }
 
-    button {
-      color: #08fdd7;
-      border: 1px solid #08fdd7;
-      background: transparent;
-      text-decoration: none;
-      padding: 1rem 1.8rem;
-      font-size: 1.4rem;
-      letter-spacing: 0.4rem;
+        #map {
+            width:55%;
+            height: auto;
+        }
+
+       
+    }
+}
+
+.wrapper-contact {
+    .footer {
+        margin-top: auto;
+    }
+}
+
+@media (max-width: 1240px) {
+    .wrapper {
+        .contact {
+            flex-direction: column-reverse;
+
+            .form-map__wrapper {
+                display: flex;
+                width: 100%;
+
+                .form__area {
+                    .form {
+                        margin-top: 0;
+                    }
+
+                    .personal-informations {
+                        padding-right: 0.5rem;
+                    }
+                }
+
+            }
+    
+            #map {
+                margin-top: 2rem;
+                width: 100%;
+                height: 50vh;
+            }
+        }
     }
   }
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        .contact {
+            .form-map__wrapper {
+                display: block;
+                width: 100%;
+
+                .form__area {
+                    .form {
+                        margin-top: 2rem;
+
+                        .text__area {
+                            textarea {
+                              width: 100%;
+                              height: 25vh;        
+                            }
+                        }
+                    }
+
+                    .personal-informations {
+                        padding-right: 1rem;
+                    }
+                }
+            }
+    
+            #map {
+                width: 100%;
+                height: 25vh;
+            }
+        }
+    }
+
+    .wrapper-contact {
+        .footer {
+            margin-top: 3rem;
+        }
+    }
 }
+
+@media (max-width: 440px) {
+    .wrapper {
+        h1 {
+            font-size: 6rem;
+        }
+        .contact {
+            .form-map__wrapper {
+                .form__area {
+                    .form {
+                        margin-top: 2rem;
+
+                        .text__area {
+                            textarea {
+                              height: 20vh;        
+                            }
+                        }
+                    }
+                }
+
+                .personal-informations {
+                    font-size: 1.6rem;
+
+                    h2 {
+                        font-size: 3rem;
+                    }
+                }
+            }
+    
+            #map {
+                height: 25vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .wrapper {
+        .contact {
+            .form-map__wrapper {
+              
+
+                .personal-informations {
+                    font-size: 1.4rem;
+
+                    h2 {
+                        font-size: 2.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+ 

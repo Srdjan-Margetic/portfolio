@@ -7,7 +7,7 @@
     <title>Srdjan Margetic</title>
   </head>
   <body>
-    <div class="wrapper bg-noise">
+    <div class="wrapper wrapper-contact bg-noise">
         <header class="header">
             <div class="navigation__name"><a href="#" >Srdjan Margetic</a></p></div>
             <div class="logo">
@@ -29,24 +29,36 @@
             </nav>
         </header>
 
+        <h1>Contact</h1>
+
         <section class="contact move-info">
-            <article class="form__area">
-                <form class="form" name="contact" method="POST" data-netlify="true">
-                    <div class="name__area">
-                        <input type="text" name="name"  placeholder="Name" />
-                        <input type="text" name="lastname" placeholder="Last name" />
-                    </div>
-                    <div class="email__area">
-                        <input type="email" name="email" placeholder="Email" />
-                    </div>       
-                    <div class="text__area">
-                        <textarea name="message" placeholder="Message"></textarea>
-                    </div>
-                        <div data-netlify-recaptcha="true"></div>
-                        <button class="btn" type="submit">Send</button>
-                </form>
+            <article id="map" class="map_area">
             </article>
-            <article class="map__area"></article>
+
+            <div class="form-map__wrapper">
+                <article class="personal-informations">
+                    <h2>Personal contact</h2>
+                    <a href="+381600212712">060/02-12-712</a> <br>
+                    <a href="mailto:srdjanmargetic@gmail.com">srdjanmargetic@gmail.com</a>
+                </article>
+
+                <article class="form__area">
+                    <form class="form" name="contact" method="POST" data-netlify="true">
+                        <div class="name__area">
+                            <input type="text" name="name"  placeholder="Name" />
+                            <input type="text" name="lastname" placeholder="Last name" />
+                        </div>
+                        <div class="email__area">
+                            <input type="email" name="email" placeholder="Email" />
+                        </div>       
+                        <div class="text__area">
+                            <textarea name="message" placeholder="Message"></textarea>
+                        </div>
+                            <div data-netlify-recaptcha="true"></div>
+                            <button class="btn" type="submit">Send</button>
+                    </form>
+                </article>
+            </div>
         </section>
 
         <footer class="footer">
@@ -57,6 +69,25 @@
               </ul>
         </footer>
     </div>
+
+    
+    <script>
+        function initMap() {
+            let options = {
+            zoom:8,
+            center: {lat:42, lng:-71}
+            }
+            let map = new google.maps.Map(document.getElementById('map'), options);
+
+            let marker = new google.maps.marker({
+                position: { lat:42.4668, lng: -70.9495},
+                map:map
+            })
+        }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8djc1SP1keNHziBgOTM3YNdH8iM4dMO4&callback=initMap">
+    </script>
     <script src="main.js"></script>
   </body>
 </html>
