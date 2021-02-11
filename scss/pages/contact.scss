@@ -5,13 +5,13 @@
         font-size: 8rem;
         text-align: center;
     }
+    
     .contact {
         display: flex;
         justify-content: space-between;
         gap: 5%;
         margin: auto 0;
         transition: transform 0.3s ease-in;
-
 
         .form-map__wrapper {
             width: 40%;
@@ -116,8 +116,6 @@
             width:55%;
             height: auto;
         }
-
-       
     }
 }
 
@@ -145,7 +143,6 @@
                         padding-right: 0.5rem;
                     }
                 }
-
             }
     
             #map {
@@ -155,7 +152,7 @@
             }
         }
     }
-  }
+}
 
 
 @media (max-width: 768px) {

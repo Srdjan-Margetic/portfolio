@@ -227,7 +227,8 @@ a.btn {
       font-size: 5.4rem;
       color: #ffffff;
       line-height: 1.3;
-      transition: transform 0.3s ease-in; }
+      transition: transform 0.3s ease-in;
+      margin: 0 auto; }
       .wrapper .main__info-secondary {
         font-size: 1.6rem;
         color: #8d8d8d;
@@ -330,22 +331,25 @@ a.btn {
       font-size: 1.2rem; }
   .wrapper .main__animation {
     margin-top: 100px; }
-    .wrapper .main__animation .cube p {
-      display: block;
+    .wrapper .main__animation .cube {
       width: 14rem;
       height: 14rem; }
-    .wrapper .main__animation .cube p:nth-child(1) {
-      transform: rotateY(0deg) translateZ(70px); }
-    .wrapper .main__animation .cube p:nth-child(2) {
-      transform: rotateY(90deg) translateZ(70px); }
-    .wrapper .main__animation .cube p:nth-child(3) {
-      transform: rotateY(180deg) translateZ(70px); }
-    .wrapper .main__animation .cube p:nth-child(4) {
-      transform: rotateY(-90deg) translateZ(70px); }
-    .wrapper .main__animation .cube p:nth-child(5) {
-      transform: rotateX(90deg) translateZ(70px); }
-    .wrapper .main__animation .cube p:nth-child(6) {
-      transform: rotateX(-90deg) translateZ(70px); }
+      .wrapper .main__animation .cube p {
+        display: block;
+        width: 14rem;
+        height: 14rem; }
+      .wrapper .main__animation .cube p:nth-child(1) {
+        transform: rotateY(0deg) translateZ(70px); }
+      .wrapper .main__animation .cube p:nth-child(2) {
+        transform: rotateY(90deg) translateZ(70px); }
+      .wrapper .main__animation .cube p:nth-child(3) {
+        transform: rotateY(180deg) translateZ(70px); }
+      .wrapper .main__animation .cube p:nth-child(4) {
+        transform: rotateY(-90deg) translateZ(70px); }
+      .wrapper .main__animation .cube p:nth-child(5) {
+        transform: rotateX(90deg) translateZ(70px); }
+      .wrapper .main__animation .cube p:nth-child(6) {
+        transform: rotateX(-90deg) translateZ(70px); }
   @keyframes loop {
     from {
       transform: rotateX(0deg) rotateY(0deg); }
@@ -359,22 +363,25 @@ a.btn {
       font-size: 1.2rem; }
   .wrapper .main__animation {
     margin-top: 100px; }
-    .wrapper .main__animation .cube p {
+    .wrapper .main__animation .cube {
       width: 10rem;
-      height: 10rem;
-      font-size: 1.2rem; }
-    .wrapper .main__animation .cube p:nth-child(1) {
-      transform: rotateY(0deg) translateZ(50px); }
-    .wrapper .main__animation .cube p:nth-child(2) {
-      transform: rotateY(90deg) translateZ(50px); }
-    .wrapper .main__animation .cube p:nth-child(3) {
-      transform: rotateY(180deg) translateZ(50px); }
-    .wrapper .main__animation .cube p:nth-child(4) {
-      transform: rotateY(-90deg) translateZ(50px); }
-    .wrapper .main__animation .cube p:nth-child(5) {
-      transform: rotateX(90deg) translateZ(50px); }
-    .wrapper .main__animation .cube p:nth-child(6) {
-      transform: rotateX(-90deg) translateZ(50px); }
+      height: 10rem; }
+      .wrapper .main__animation .cube p {
+        width: 10rem;
+        height: 10rem;
+        font-size: 1.2rem; }
+      .wrapper .main__animation .cube p:nth-child(1) {
+        transform: rotateY(0deg) translateZ(50px); }
+      .wrapper .main__animation .cube p:nth-child(2) {
+        transform: rotateY(90deg) translateZ(50px); }
+      .wrapper .main__animation .cube p:nth-child(3) {
+        transform: rotateY(180deg) translateZ(50px); }
+      .wrapper .main__animation .cube p:nth-child(4) {
+        transform: rotateY(-90deg) translateZ(50px); }
+      .wrapper .main__animation .cube p:nth-child(5) {
+        transform: rotateX(90deg) translateZ(50px); }
+      .wrapper .main__animation .cube p:nth-child(6) {
+        transform: rotateX(-90deg) translateZ(50px); }
   @keyframes loop {
     from {
       transform: rotateX(0deg) rotateY(0deg); }
