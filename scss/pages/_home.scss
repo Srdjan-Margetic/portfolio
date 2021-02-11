@@ -21,6 +21,7 @@
       color: $color-white;
       line-height: 1.3;
       transition: transform 0.3s ease-in;
+      margin: 0 auto;
 
       &-secondary {
         font-size: 1.6rem;
@@ -207,8 +208,8 @@
         margin-top: 100px;
 
         .cube {
-          //   width: 14rem;
-          //   height: 14rem;
+            width: 14rem;
+            height: 14rem;
 
           p {
             display: block;
@@ -269,8 +270,8 @@
         margin-top: 100px;
 
         .cube {
-          //   width: 10rem;
-          //   height: 10rem;
+            width: 10rem;
+            height: 10rem;
 
           p {
             width: 10rem;
