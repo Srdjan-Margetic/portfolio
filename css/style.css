@@ -322,34 +322,36 @@ a.btn {
       margin-top: 100px; } }
 
 @media (max-width: 640px) {
-  .wrapper .main__info {
-    width: 100%;
-    font-size: 4.6rem; }
-    .wrapper .main__info-secondary {
-      font-size: 1.4rem; }
-    .wrapper .main__info .btn {
-      font-size: 1.2rem; }
-  .wrapper .main__animation {
-    margin-top: 100px; }
-    .wrapper .main__animation .cube {
-      width: 14rem;
-      height: 14rem; }
-      .wrapper .main__animation .cube p {
-        display: block;
+  .wrapper {
+    padding: 1.5% 5%; }
+    .wrapper .main__info {
+      width: 100%;
+      font-size: 4.6rem; }
+      .wrapper .main__info-secondary {
+        font-size: 1.4rem; }
+      .wrapper .main__info .btn {
+        font-size: 1.2rem; }
+    .wrapper .main__animation {
+      margin-top: 100px; }
+      .wrapper .main__animation .cube {
         width: 14rem;
         height: 14rem; }
-      .wrapper .main__animation .cube p:nth-child(1) {
-        transform: rotateY(0deg) translateZ(70px); }
-      .wrapper .main__animation .cube p:nth-child(2) {
-        transform: rotateY(90deg) translateZ(70px); }
-      .wrapper .main__animation .cube p:nth-child(3) {
-        transform: rotateY(180deg) translateZ(70px); }
-      .wrapper .main__animation .cube p:nth-child(4) {
-        transform: rotateY(-90deg) translateZ(70px); }
-      .wrapper .main__animation .cube p:nth-child(5) {
-        transform: rotateX(90deg) translateZ(70px); }
-      .wrapper .main__animation .cube p:nth-child(6) {
-        transform: rotateX(-90deg) translateZ(70px); }
+        .wrapper .main__animation .cube p {
+          display: block;
+          width: 14rem;
+          height: 14rem; }
+        .wrapper .main__animation .cube p:nth-child(1) {
+          transform: rotateY(0deg) translateZ(70px); }
+        .wrapper .main__animation .cube p:nth-child(2) {
+          transform: rotateY(90deg) translateZ(70px); }
+        .wrapper .main__animation .cube p:nth-child(3) {
+          transform: rotateY(180deg) translateZ(70px); }
+        .wrapper .main__animation .cube p:nth-child(4) {
+          transform: rotateY(-90deg) translateZ(70px); }
+        .wrapper .main__animation .cube p:nth-child(5) {
+          transform: rotateX(90deg) translateZ(70px); }
+        .wrapper .main__animation .cube p:nth-child(6) {
+          transform: rotateX(-90deg) translateZ(70px); }
   @keyframes loop {
     from {
       transform: rotateX(0deg) rotateY(0deg); }
@@ -651,24 +653,38 @@ a.btn {
 
 @media (max-width: 1240px) {
   .projects section {
-    font-size: 2.8rem; } }
+    font-size: 2.8rem; }
+    .projects section ul {
+      font-size: 2.4rem; } }
 
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .projects {
     flex-wrap: wrap; }
     .projects section {
       height: 35vh;
-      font-size: 2.6rem;
-      word-wrap: break-word; } }
+      word-wrap: break-word;
+      font-size: 2.6rem; }
+      .projects section ul {
+        font-size: 2.6rem; } }
+
+@media (max-width: 680px) {
+  .projects section {
+    font-size: 2.4rem; }
+    .projects section ul {
+      font-size: 2.2rem; } }
 
 @media (max-width: 440px) {
   .projects section {
     height: 30vh;
-    font-size: 2rem; } }
+    font-size: 2rem; }
+    .projects section ul {
+      font-size: 2rem; } }
 
 @media (max-width: 360px) {
   .projects section {
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+    .projects section ul {
+      font-size: 1.4rem; } }
 
 .wrapper .contact {
   display: flex;
