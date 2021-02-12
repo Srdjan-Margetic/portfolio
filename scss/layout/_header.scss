@@ -145,6 +145,12 @@
   }
 }
 
+@media (max-width: 640px) {
+    .move-left {
+        transform: translateX(60px);
+      }
+}
+
 @media (max-width: 440px) {
   .header {
     height: 5rem;

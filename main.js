@@ -1,5 +1,6 @@
 "use strict";
 
+const wrapper = document.querySelector('.wrapper');
 const mainInfo = document.querySelector(".move-info");
 const navLinks = document.querySelectorAll(".navigation__list li");
 const burger = document.querySelector(".burger");
@@ -31,9 +32,12 @@ const navBurger = () => {
     //Toggle navigation
     nav.classList.toggle("nav-active");
     mainInfo.classList.toggle("move-left");
+    wrapper.style.padding = "1.5% 10%"
 
     if (nav.classList.contains("nav-active") === false) {
       nav.style.transition = "0.5s ease-out";
+      wrapper.style.padding = "1.5% 5%"
+
       setTimeout(() => {
         nav.style.transition = "";
       }, 500);

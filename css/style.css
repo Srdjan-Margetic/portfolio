@@ -168,6 +168,10 @@ a.btn {
     .header .navigation .burger.toggle .burger__line-3 {
       transform: rotate(45deg) translate(-0.5rem, -0.5rem); } }
 
+@media (max-width: 640px) {
+  .move-left {
+    transform: translateX(60px); } }
+
 @media (max-width: 440px) {
   .header {
     height: 5rem; }
