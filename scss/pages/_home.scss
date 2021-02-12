@@ -5,7 +5,6 @@
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  transition: 0.5s;
 
   &.bg-noise {
     @include mainBackground;
@@ -14,6 +13,8 @@
   .main {
     margin: auto 0;
     display: flex;
+    transition: 0.5s;
+
 
     &__info {
       width: 50%;

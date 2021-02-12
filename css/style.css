@@ -217,15 +217,15 @@ a.btn {
   padding: 1.5% 10%;
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
-  transition: 0.5s; }
+  overflow-x: hidden; }
   .wrapper.bg-noise {
     background: url("../../img/bg-noise.png"), #222;
     background-size: 30rem 30rem;
     animation: 250ms steps(10, end) 0s infinite alternate-reverse none running noise-animation; }
   .wrapper .main {
     margin: auto 0;
-    display: flex; }
+    display: flex;
+    transition: 0.5s; }
     .wrapper .main__info {
       width: 50%;
       font-size: 5.4rem;
