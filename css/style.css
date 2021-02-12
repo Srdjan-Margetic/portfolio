@@ -432,8 +432,8 @@ a.btn {
       stroke-dasharray: 560.15;
       stroke-dashoffset: 560.15; }
     .about .svg .svg_heading path:nth-child(4) {
-      stroke-dasharray: 439.13;
-      stroke-dashoffset: 439.13; }
+      stroke-dasharray: 427.13;
+      stroke-dashoffset: 427.13; }
     .about .svg .svg_heading path:nth-child(5) {
       stroke-dasharray: 411.56;
       stroke-dashoffset: 411.56; }
@@ -686,59 +686,6 @@ a.btn {
     .projects section ul {
       font-size: 1.4rem; } }
 
-.wrapper .svg {
-  margin: 5rem 0;
-  text-align: center; }
-  .wrapper .svg .svg_heading {
-    width: 55rem;
-    height: auto; }
-  @media screen and (max-width: 1240px) {
-    .wrapper .svg .svg_heading {
-      width: 50rem; } }
-  @media screen and (max-width: 1024px) {
-    .wrapper .svg .svg_heading {
-      width: 45rem; } }
-  @media screen and (max-width: 768px) {
-    .wrapper .svg {
-      margin: 3rem 0; }
-      .wrapper .svg .svg_heading {
-        width: 38rem; } }
-  @media screen and (max-width: 640px) {
-    .wrapper .svg {
-      margin: 3rem 0 0 0; }
-      .wrapper .svg .svg_heading {
-        width: 30rem; } }
-  @media screen and (max-width: 440px) {
-    .wrapper .svg .svg_heading {
-      width: 26rem; } }
-  @media screen and (max-width: 360px) {
-    .wrapper .svg .svg_heading {
-      width: 22rem; } }
-  @media screen and (max-width: 320px) {
-    .wrapper .svg .svg_heading {
-      width: 20rem; } }
-  .wrapper .svg .svg_heading path:nth-child(2) {
-    stroke-dasharray: 475.02;
-    stroke-dashoffset: 475.02; }
-  .wrapper .svg .svg_heading path:nth-child(3) {
-    stroke-dasharray: 243.78;
-    stroke-dashoffset: 243.78; }
-  .wrapper .svg .svg_heading path:nth-child(4) {
-    stroke-dasharray: 600.41;
-    stroke-dashoffset: 600.41; }
-  .wrapper .svg .svg_heading path:nth-child(5) {
-    stroke-dasharray: 319.72;
-    stroke-dashoffset: 319.72; }
-  .wrapper .svg .svg_heading path:nth-child(6) {
-    stroke-dasharray: 536.68;
-    stroke-dashoffset: 536.68; }
-  .wrapper .svg .svg_heading path:nth-child(7) {
-    stroke-dasharray: 355.02;
-    stroke-dashoffset: 355.02; }
-  .wrapper .svg .svg_heading path:nth-child(8) {
-    stroke-dasharray: 319.72;
-    stroke-dashoffset: 319.72; }
-
 .wrapper .contact {
   display: flex;
   justify-content: space-between;
@@ -826,7 +773,63 @@ a.btn {
     .wrapper .contact #map {
       margin-top: 2rem;
       width: 100%;
-      height: 50vh; } }
+      height: 50vh; }
+  .wrapper-contact .svg {
+    margin: 5rem 0;
+    text-align: center; }
+    .wrapper-contact .svg .svg_heading {
+      width: 55rem;
+      height: auto; } }
+  @media screen and (max-width: 1240px) and (max-width: 1240px) {
+    .wrapper-contact .svg .svg_heading {
+      width: 50rem; } }
+  @media screen and (max-width: 1240px) and (max-width: 1024px) {
+    .wrapper-contact .svg .svg_heading {
+      width: 45rem; } }
+  @media screen and (max-width: 1240px) and (max-width: 768px) {
+    .wrapper-contact .svg {
+      margin: 3rem 0; }
+      .wrapper-contact .svg .svg_heading {
+        width: 38rem; } }
+  @media screen and (max-width: 1240px) and (max-width: 640px) {
+    .wrapper-contact .svg {
+      margin: 3rem 0 0 0; }
+      .wrapper-contact .svg .svg_heading {
+        width: 30rem; } }
+  @media screen and (max-width: 1240px) and (max-width: 440px) {
+    .wrapper-contact .svg .svg_heading {
+      width: 26rem; } }
+  @media screen and (max-width: 1240px) and (max-width: 360px) {
+    .wrapper-contact .svg .svg_heading {
+      width: 22rem; } }
+  @media screen and (max-width: 1240px) and (max-width: 320px) {
+    .wrapper-contact .svg .svg_heading {
+      width: 20rem; } }
+
+@media (max-width: 1240px) {
+    .wrapper-contact .svg .svg_heading path:nth-child(2) {
+      stroke-dasharray: 475.02;
+      stroke-dashoffset: 475.02; }
+    .wrapper-contact .svg .svg_heading path:nth-child(3) {
+      stroke-dasharray: 243.78;
+      stroke-dashoffset: 243.78; }
+    .wrapper-contact .svg .svg_heading path:nth-child(4) {
+      stroke-dasharray: 600.41;
+      stroke-dashoffset: 600.41; }
+    .wrapper-contact .svg .svg_heading path:nth-child(5) {
+      stroke-dasharray: 319.72;
+      stroke-dashoffset: 319.72; }
+    .wrapper-contact .svg .svg_heading path:nth-child(6) {
+      stroke-dasharray: 536.68;
+      stroke-dashoffset: 536.68; }
+    .wrapper-contact .svg .svg_heading path:nth-child(7) {
+      stroke-dasharray: 355.02;
+      stroke-dashoffset: 355.02; }
+    .wrapper-contact .svg .svg_heading path:nth-child(8) {
+      stroke-dasharray: 319.72;
+      stroke-dashoffset: 319.72; }
+  .wrapper-contact .footer {
+    margin-top: 3rem; } }
 
 @media (max-width: 768px) {
   .wrapper .contact .form-map__wrapper {
@@ -841,9 +844,7 @@ a.btn {
       padding-right: 1rem; }
   .wrapper .contact #map {
     width: 100%;
-    height: 25vh; }
-  .wrapper-contact .footer {
-    margin-top: 3rem; } }
+    height: 25vh; } }
 
 @media (max-width: 440px) {
   .wrapper .contact .form-map__wrapper .form__area .form {
