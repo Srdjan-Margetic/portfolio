@@ -686,50 +686,50 @@ a.btn {
     .projects section ul {
       font-size: 1.4rem; } }
 
-.wrapper .contact {
+.contact .contact__info {
   display: flex;
   justify-content: space-between;
   gap: 5%;
   margin: auto 0;
   transition: transform 0.3s ease-in; }
-  .wrapper .contact .form-map__wrapper {
+  .contact .contact__info .form-map__wrapper {
     width: 40%; }
-    .wrapper .contact .form-map__wrapper .form__area {
+    .contact .contact__info .form-map__wrapper .form__area {
       width: 100%; }
-      .wrapper .contact .form-map__wrapper .form__area .form {
+      .contact .contact__info .form-map__wrapper .form__area .form {
         margin-top: 2rem; }
-        .wrapper .contact .form-map__wrapper .form__area .form input {
+        .contact .contact__info .form-map__wrapper .form__area .form input {
           height: 3rem;
           background-color: #8d8d8d;
           border: 1px solid #181818; }
-          .wrapper .contact .form-map__wrapper .form__area .form input:focus {
+          .contact .contact__info .form-map__wrapper .form__area .form input:focus {
             color: black;
             background: white; }
-          .wrapper .contact .form-map__wrapper .form__area .form input::placeholder {
+          .contact .contact__info .form-map__wrapper .form__area .form input::placeholder {
             padding-left: 0.5rem;
             color: #08fdd7; }
-        .wrapper .contact .form-map__wrapper .form__area .form .name__area {
+        .contact .contact__info .form-map__wrapper .form__area .form .name__area {
           display: flex;
           justify-content: space-between;
           gap: 0.2rem; }
-          .wrapper .contact .form-map__wrapper .form__area .form .name__area input {
+          .contact .contact__info .form-map__wrapper .form__area .form .name__area input {
             width: 100%; }
-        .wrapper .contact .form-map__wrapper .form__area .form .email__area input {
+        .contact .contact__info .form-map__wrapper .form__area .form .email__area input {
           width: 100%; }
-        .wrapper .contact .form-map__wrapper .form__area .form .text__area textarea {
+        .contact .contact__info .form-map__wrapper .form__area .form .text__area textarea {
           width: 100%;
           height: 32vh;
           background-color: #8d8d8d;
           border: 1px solid #181818;
           color: white; }
-          .wrapper .contact .form-map__wrapper .form__area .form .text__area textarea:focus {
+          .contact .contact__info .form-map__wrapper .form__area .form .text__area textarea:focus {
             color: black;
             background: white; }
-          .wrapper .contact .form-map__wrapper .form__area .form .text__area textarea::placeholder {
+          .contact .contact__info .form-map__wrapper .form__area .form .text__area textarea::placeholder {
             padding-left: 0.7rem;
             padding-top: 0.5rem;
             color: #08fdd7; }
-        .wrapper .contact .form-map__wrapper .form__area .form button {
+        .contact .contact__info .form-map__wrapper .form__area .form button {
           color: #08fdd7;
           border: 1px solid #08fdd7;
           background: transparent;
@@ -737,129 +737,180 @@ a.btn {
           padding: 1rem 1.8rem;
           font-size: 1.4rem;
           letter-spacing: 0.4rem; }
-    .wrapper .contact .form-map__wrapper .personal-informations {
+    .contact .contact__info .form-map__wrapper .personal-informations {
       width: 100%;
       color: #ffffff;
       font-size: 1.8rem;
       text-align: left;
       transition: .3s ease; }
-      .wrapper .contact .form-map__wrapper .personal-informations h2 {
+      .contact .contact__info .form-map__wrapper .personal-informations h2 {
         font-size: 3.8rem;
         line-height: 1;
         padding-bottom: 1.5rem; }
-      .wrapper .contact .form-map__wrapper .personal-informations a {
+      .contact .contact__info .form-map__wrapper .personal-informations a {
         color: #ffffff;
         text-decoration: none;
         padding-bottom: 1rem; }
-        .wrapper .contact .form-map__wrapper .personal-informations a:hover {
+        .contact .contact__info .form-map__wrapper .personal-informations a:hover {
           color: #08fdd7; }
-  .wrapper .contact #map {
+  .contact .contact__info #map {
     width: 55%;
     height: auto; }
-
-.wrapper-contact .footer {
-  margin-top: auto; }
-
-@media (max-width: 1240px) {
-  .wrapper .contact {
-    flex-direction: column-reverse; }
-    .wrapper .contact .form-map__wrapper {
-      display: flex;
-      width: 100%; }
-      .wrapper .contact .form-map__wrapper .form__area .form {
-        margin-top: 0; }
-      .wrapper .contact .form-map__wrapper .form__area .personal-informations {
-        padding-right: 0.5rem; }
-    .wrapper .contact #map {
-      margin-top: 2rem;
-      width: 100%;
-      height: 50vh; }
-  .wrapper-contact .svg {
+  .contact .contact__info .svg {
     margin: 5rem 0;
     text-align: center; }
-    .wrapper-contact .svg .svg_heading {
+    .contact .contact__info .svg .svg_heading {
       width: 55rem;
-      height: auto; } }
-  @media screen and (max-width: 1240px) and (max-width: 1240px) {
-    .wrapper-contact .svg .svg_heading {
-      width: 50rem; } }
-  @media screen and (max-width: 1240px) and (max-width: 1024px) {
-    .wrapper-contact .svg .svg_heading {
-      width: 45rem; } }
-  @media screen and (max-width: 1240px) and (max-width: 768px) {
-    .wrapper-contact .svg {
-      margin: 3rem 0; }
-      .wrapper-contact .svg .svg_heading {
-        width: 38rem; } }
-  @media screen and (max-width: 1240px) and (max-width: 640px) {
-    .wrapper-contact .svg {
-      margin: 3rem 0 0 0; }
-      .wrapper-contact .svg .svg_heading {
-        width: 30rem; } }
-  @media screen and (max-width: 1240px) and (max-width: 440px) {
-    .wrapper-contact .svg .svg_heading {
-      width: 26rem; } }
-  @media screen and (max-width: 1240px) and (max-width: 360px) {
-    .wrapper-contact .svg .svg_heading {
-      width: 22rem; } }
-  @media screen and (max-width: 1240px) and (max-width: 320px) {
-    .wrapper-contact .svg .svg_heading {
-      width: 20rem; } }
-
-@media (max-width: 1240px) {
-    .wrapper-contact .svg .svg_heading path:nth-child(2) {
+      height: auto; }
+    @media screen and (max-width: 1240px) {
+      .contact .contact__info .svg .svg_heading {
+        width: 50rem; } }
+    @media screen and (max-width: 1024px) {
+      .contact .contact__info .svg .svg_heading {
+        width: 45rem; } }
+    @media screen and (max-width: 768px) {
+      .contact .contact__info .svg {
+        margin: 3rem 0; }
+        .contact .contact__info .svg .svg_heading {
+          width: 38rem; } }
+    @media screen and (max-width: 640px) {
+      .contact .contact__info .svg {
+        margin: 3rem 0 0 0; }
+        .contact .contact__info .svg .svg_heading {
+          width: 30rem; } }
+    @media screen and (max-width: 440px) {
+      .contact .contact__info .svg .svg_heading {
+        width: 26rem; } }
+    @media screen and (max-width: 360px) {
+      .contact .contact__info .svg .svg_heading {
+        width: 22rem; } }
+    @media screen and (max-width: 320px) {
+      .contact .contact__info .svg .svg_heading {
+        width: 20rem; } }
+    .contact .contact__info .svg .svg_heading path:nth-child(2) {
       stroke-dasharray: 475.02;
       stroke-dashoffset: 475.02; }
-    .wrapper-contact .svg .svg_heading path:nth-child(3) {
-      stroke-dasharray: 243.78;
-      stroke-dashoffset: 243.78; }
-    .wrapper-contact .svg .svg_heading path:nth-child(4) {
+    .contact .contact__info .svg .svg_heading path:nth-child(3) {
+      stroke-dasharray: 243.71;
+      stroke-dashoffset: 243.71; }
+    .contact .contact__info .svg .svg_heading path:nth-child(4) {
       stroke-dasharray: 600.41;
       stroke-dashoffset: 600.41; }
-    .wrapper-contact .svg .svg_heading path:nth-child(5) {
+    .contact .contact__info .svg .svg_heading path:nth-child(5) {
       stroke-dasharray: 319.72;
       stroke-dashoffset: 319.72; }
-    .wrapper-contact .svg .svg_heading path:nth-child(6) {
+    .contact .contact__info .svg .svg_heading path:nth-child(6) {
       stroke-dasharray: 536.68;
       stroke-dashoffset: 536.68; }
-    .wrapper-contact .svg .svg_heading path:nth-child(7) {
+    .contact .contact__info .svg .svg_heading path:nth-child(7) {
       stroke-dasharray: 355.02;
       stroke-dashoffset: 355.02; }
-    .wrapper-contact .svg .svg_heading path:nth-child(8) {
+    .contact .contact__info .svg .svg_heading path:nth-child(8) {
       stroke-dasharray: 319.72;
       stroke-dashoffset: 319.72; }
-  .wrapper-contact .footer {
-    margin-top: 3rem; } }
+  .contact .contact__info .footer {
+    margin-top: auto; }
+
+.contact .svg {
+  margin: 5rem 0;
+  text-align: center; }
+  .contact .svg .svg_heading {
+    width: 55rem;
+    height: auto; }
+  @media screen and (max-width: 1240px) {
+    .contact .svg .svg_heading {
+      width: 50rem; } }
+  @media screen and (max-width: 1024px) {
+    .contact .svg .svg_heading {
+      width: 45rem; } }
+  @media screen and (max-width: 768px) {
+    .contact .svg {
+      margin: 3rem 0; }
+      .contact .svg .svg_heading {
+        width: 38rem; } }
+  @media screen and (max-width: 640px) {
+    .contact .svg {
+      margin: 3rem 0 0 0; }
+      .contact .svg .svg_heading {
+        width: 30rem; } }
+  @media screen and (max-width: 440px) {
+    .contact .svg .svg_heading {
+      width: 26rem; } }
+  @media screen and (max-width: 360px) {
+    .contact .svg .svg_heading {
+      width: 22rem; } }
+  @media screen and (max-width: 320px) {
+    .contact .svg .svg_heading {
+      width: 20rem; } }
+  .contact .svg .svg_heading path:nth-child(2) {
+    stroke-dasharray: 475.02;
+    stroke-dashoffset: 475.02; }
+  .contact .svg .svg_heading path:nth-child(3) {
+    stroke-dasharray: 243.71;
+    stroke-dashoffset: 243.71; }
+  .contact .svg .svg_heading path:nth-child(4) {
+    stroke-dasharray: 600.41;
+    stroke-dashoffset: 600.41; }
+  .contact .svg .svg_heading path:nth-child(5) {
+    stroke-dasharray: 319.72;
+    stroke-dashoffset: 319.72; }
+  .contact .svg .svg_heading path:nth-child(6) {
+    stroke-dasharray: 536.68;
+    stroke-dashoffset: 536.68; }
+  .contact .svg .svg_heading path:nth-child(7) {
+    stroke-dasharray: 355.02;
+    stroke-dashoffset: 355.02; }
+  .contact .svg .svg_heading path:nth-child(8) {
+    stroke-dasharray: 319.72;
+    stroke-dashoffset: 319.72; }
+
+.contact .footer {
+  margin-top: 3rem; }
+
+@media (max-width: 1240px) {
+  .contact .contact__info {
+    flex-direction: column-reverse; }
+    .contact .contact__info .form-map__wrapper {
+      display: flex;
+      width: 100%; }
+      .contact .contact__info .form-map__wrapper .form__area .form {
+        margin-top: 0; }
+      .contact .contact__info .form-map__wrapper .form__area .personal-informations {
+        padding-right: 0.5rem; }
+    .contact .contact__info #map {
+      margin-top: 2rem;
+      width: 100%;
+      height: 50vh; } }
 
 @media (max-width: 768px) {
-  .wrapper .contact .form-map__wrapper {
+  .contact .contact__info .form-map__wrapper {
     display: block;
     width: 100%; }
-    .wrapper .contact .form-map__wrapper .form__area .form {
+    .contact .contact__info .form-map__wrapper .form__area .form {
       margin-top: 2rem; }
-      .wrapper .contact .form-map__wrapper .form__area .form .text__area textarea {
+      .contact .contact__info .form-map__wrapper .form__area .form .text__area textarea {
         width: 100%;
         height: 25vh; }
-    .wrapper .contact .form-map__wrapper .form__area .personal-informations {
+    .contact .contact__info .form-map__wrapper .form__area .personal-informations {
       padding-right: 1rem; }
-  .wrapper .contact #map {
+  .contact .contact__info #map {
     width: 100%;
     height: 25vh; } }
 
 @media (max-width: 440px) {
-  .wrapper .contact .form-map__wrapper .form__area .form {
+  .contact .contact__info .form-map__wrapper .form__area .form {
     margin-top: 2rem; }
-    .wrapper .contact .form-map__wrapper .form__area .form .text__area textarea {
+    .contact .contact__info .form-map__wrapper .form__area .form .text__area textarea {
       height: 20vh; }
-  .wrapper .contact .form-map__wrapper .personal-informations {
+  .contact .contact__info .form-map__wrapper .personal-informations {
     font-size: 1.6rem; }
-    .wrapper .contact .form-map__wrapper .personal-informations h2 {
+    .contact .contact__info .form-map__wrapper .personal-informations h2 {
       font-size: 3rem; }
-  .wrapper .contact #map {
+  .contact .contact__info #map {
     height: 25vh; } }
 
 @media (max-width: 320px) {
-  .wrapper .contact .form-map__wrapper .personal-informations {
+  .contact .contact .form-map__wrapper .personal-informations {
     font-size: 1.4rem; }
-    .wrapper .contact .form-map__wrapper .personal-informations h2 {
+    .contact .contact .form-map__wrapper .personal-informations h2 {
       font-size: 2.8rem; } }
