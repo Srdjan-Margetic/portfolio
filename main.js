@@ -127,29 +127,20 @@ projectsListPersonal.forEach((el) => {
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(
     function (position) {
-      const { latitude } = position.coords;
-      const { longitude } = position.coords;
-      console.log(`https://www.google.com/maps/@${latitude},${longitude}`);
-    },
-    function () {
-      alert("We are not able to find your location!");
+
+    const myAddressLati = 44.783186;
+    const myAddressLong = 20.4114734;
+    const coords = [myAddressLati, myAddressLong];
+
+      const map = L.map('map').setView(coords, 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker(coords).addTo(map)
+            .bindPopup('Here I am! 🖥')
+            .openPopup();
     }
-  );
+  )
 }
-
-
-console.log(`https://www.google.com/maps/@44.7837198,20.4172,15z`);
-// if (navigator.geolocation) {
-//     navigator.geolocation.getCurrentPosition(
-//       function (position) {
-//         console.log("kjk");
-//         const { latitude } = position.coords;
-//         const { longitude } = position.coords;
-//         console.log(latitude, longitude);
-//         console.log(position);
-//       },
-//       function () {
-//         alert("Could not get your position");
-//       }
-//     );
-//   }
