@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link  rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin=""/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" />
     <title>Srdjan Margetic</title>
@@ -55,15 +51,18 @@
                 <path d="M565.707 102.392C563.787 104.12 561.387 105.464 558.507 106.424C555.723 107.288 552.795 107.72 549.723 107.72C542.619 107.72 537.147 105.8 533.307 101.96C529.467 98.12 527.547 92.696 527.547 85.688V39.896H514.01V31.256H527.547V14.696H537.771V31.256H560.811V39.896H537.771V85.112C537.771 89.624 538.875 93.08 541.083 95.48C543.387 97.784 546.651 98.936 550.875 98.936C552.987 98.936 555.003 98.6 556.923 97.928C558.939 97.256 560.667 96.296 562.107 95.048L565.707 102.392Z" stroke="white" stroke-width="10" mask="url(#path-1-outside-1)"/>
             </svg>   
         </div>
+
         <section class="contact__info move-info">
             <article id="map" class="map_area">
             </article>
+
             <div class="form-map__wrapper">
                 <article class="personal-informations">
                     <h2>Personal contact</h2>
                     <a href="tel:+381600212712">060/02-12-712</a> <br>
                     <a href="mailto:srdjanmargetic@gmail.com">srdjanmargetic@gmail.com</a>
                 </article>
+
                 <article class="form__area">
                     <form class="form" name="contact" method="POST" data-netlify="true">
                         <div class="name__area">
@@ -91,9 +90,40 @@
         </footer>
     </div>
 
-    <script defer src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
+    <script>
+        function initMap() {
+            const myAddressLati = 44.783186;
+            const myAddressLong = 20.4114734;
+
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 12,
+                center: { lat: myAddressLati, lng: myAddressLong},
+                mapTypeControl: true,
+                mapTypeControlOptions: {
+                // style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                position: google.maps.ControlPosition.TOP_CENTER,
+                },
+                zoomControl: true,
+                zoomControlOptions: {
+                position: google.maps.ControlPosition.LEFT_CENTER,
+                },
+                scaleControl: true,
+                streetViewControl: true,
+                streetViewControlOptions: {
+                position: google.maps.ControlPosition.LEFT_TOP,
+                },
+                fullscreenControl: true,
+            });
+
+            let marker = new google.maps.Marker({
+                position: { lat:44.783186, lng: 20.4114734},
+                map:map,
+            });
+        }     
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8djc1SP1keNHziBgOTM3YNdH8iM4dMO4&callback=initMap">
+    </script>
     <script src="main.js"></script>
   </body>
 </html>
