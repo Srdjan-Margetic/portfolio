@@ -1,44 +1,5 @@
 .wrapper {
 
-    .svg {
-        @include svg-title;
-    .svg_heading {
-        & path:nth-child(2) {
-          // C
-          stroke-dasharray: 475.02;
-          stroke-dashoffset: 475.02;
-        }
-        & path:nth-child(3) {
-          //O
-          stroke-dasharray: 243.78;
-          stroke-dashoffset: 243.78;
-        }
-        & path:nth-child(4) {
-          //N
-          stroke-dasharray: 600.41 ;
-          stroke-dashoffset: 600.41;
-        }
-        & path:nth-child(5) {
-          //T
-          stroke-dasharray: 319.72;
-          stroke-dashoffset: 319.72;
-        } //A
-        & path:nth-child(6) {
-            stroke-dasharray: 536.68;
-            stroke-dashoffset: 536.68;
-        }
-        & path:nth-child(7) {
-          // C
-          stroke-dasharray: 355.02;
-          stroke-dashoffset: 355.02;
-        }
-        & path:nth-child(8) {
-          //T
-          stroke-dasharray: 319.72;
-          stroke-dashoffset: 319.72;
-        }
-      }
-    }
     .contact {
         display: flex;
         justify-content: space-between;
@@ -187,12 +148,52 @@
     }
 
     .wrapper-contact {
+
+        .svg {
+            @include svg-title;
+        .svg_heading {
+            & path:nth-child(2) {
+              // C
+              stroke-dasharray: 475.02;
+              stroke-dashoffset: 475.02;
+            }
+            & path:nth-child(3) {
+              //O
+              stroke-dasharray: 243.78;
+              stroke-dashoffset: 243.78;
+            }
+            & path:nth-child(4) {
+              //N
+              stroke-dasharray: 600.41 ;
+              stroke-dashoffset: 600.41;
+            }
+            & path:nth-child(5) {
+              //T
+              stroke-dasharray: 319.72;
+              stroke-dashoffset: 319.72;
+            } //A
+            & path:nth-child(6) {
+                stroke-dasharray: 536.68;
+                stroke-dashoffset: 536.68;
+            }
+            & path:nth-child(7) {
+              // C
+              stroke-dasharray: 355.02;
+              stroke-dashoffset: 355.02;
+            }
+            & path:nth-child(8) {
+              //T
+              stroke-dasharray: 319.72;
+              stroke-dashoffset: 319.72;
+            }
+          }
+        }
+
         .footer {
             margin-top: 3rem;
         }
     }
 }
-
 
 @media (max-width: 768px) {
     .wrapper {
@@ -229,9 +230,6 @@
 
 @media (max-width: 440px) {
     .wrapper {
-        // h1 {
-        //     font-size: 6rem;
-        // }
         .contact {
             .form-map__wrapper {
                 .form__area {
