@@ -618,20 +618,6 @@ a.btn {
       .projects section ul li a {
         text-decoration: none;
         color: #ffffff; }
-        .projects section ul li a:hover {
-          color: #08fdd7; }
-    .projects section:hover {
-      transform: scale(1.15);
-      width: 100%;
-      z-index: 1;
-      border-color: #08fdd7; }
-      .projects section:hover h2 {
-        transform: scale(1.02); }
-        .projects section:hover h2 a {
-          color: #08fdd7;
-          color: white; }
-    .projects section:hover h2 {
-      transform: scale(1.02); }
     .projects section::before {
       content: "";
       position: absolute;
@@ -639,8 +625,6 @@ a.btn {
       height: 100%;
       background-color: black;
       opacity: 0.4; }
-    .projects section:hover::before {
-      opacity: 0; }
   .projects h2 {
     z-index: 1;
     margin-bottom: 2rem; }
@@ -654,6 +638,19 @@ a.btn {
   .projects .personal__projects {
     background: url("../../img/home.jpg") no-repeat center;
     background-size: cover; }
+
+@media (min-width: 1240px) {
+  .projects section ul li a:hover {
+    color: #08fdd7; }
+  .projects section:hover {
+    transform: scale(1.15);
+    width: 100%;
+    z-index: 1;
+    border-color: #08fdd7; }
+  .projects section:hover h2 {
+    transform: scale(1.02); }
+  .projects section:hover::before {
+    opacity: 0; } }
 
 @media (max-width: 1240px) {
   .projects section {

@@ -78,31 +78,8 @@
         a {
           text-decoration: none;
           color: $color-white;
-
-          &:hover {
-            color: $color-turquoise;
-          }
         }
       }
-    }
-
-    &:hover {
-      transform: scale(1.15);
-      width: 100%;
-      z-index: 1;
-      border-color: $color-turquoise;
-
-      h2 {
-        transform: scale(1.02);
-        a {
-          color: $color-turquoise;
-          color: white;
-        }
-      }
-    }
-
-    &:hover h2 {
-      transform: scale(1.02);
     }
 
     &::before {
@@ -112,10 +89,6 @@
       height: 100%;
       background-color: black;
       opacity: 0.4;
-    }
-
-    &:hover::before {
-      opacity: 0;
     }
   }
 
@@ -139,6 +112,38 @@
     background: url("../../img/home.jpg") no-repeat center;
     background-size: cover;
   }
+}
+
+@media (min-width: 1240px) {
+    .projects {
+        section {
+          ul {
+            li {
+                a {
+    
+                  &:hover {
+                    color: $color-turquoise;
+                  }
+                }
+              }
+          }
+
+          &:hover {
+            transform: scale(1.15);
+            width: 100%;
+            z-index: 1;
+            border-color: $color-turquoise;
+          }
+      
+          &:hover h2 {
+            transform: scale(1.02);
+          }
+      
+          &:hover::before {
+            opacity: 0;
+          }
+        }
+    }
 }
 
 @media (max-width: 1240px) {
