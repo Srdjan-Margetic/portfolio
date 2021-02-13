@@ -269,11 +269,17 @@
     }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 680px) {
     .contact {
         .contact__info {
             margin-top: 3rem;
-            
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .contact {
+        .contact__info {
             .form-map__wrapper {
                 .form__area {
                     .form {
