@@ -899,16 +899,18 @@ a.btn {
     height: 25vh; } }
 
 @media (max-width: 440px) {
-  .contact .contact__info .form-map__wrapper .form__area .form {
-    margin-top: 2rem; }
-    .contact .contact__info .form-map__wrapper .form__area .form .text__area textarea {
-      height: 20vh; }
-  .contact .contact__info .form-map__wrapper .personal-informations {
-    font-size: 1.6rem; }
-    .contact .contact__info .form-map__wrapper .personal-informations h2 {
-      font-size: 3rem; }
-  .contact .contact__info #map {
-    height: 25vh; } }
+  .contact .contact__info {
+    margin-top: 3rem; }
+    .contact .contact__info .form-map__wrapper .form__area .form {
+      margin-top: 2rem; }
+      .contact .contact__info .form-map__wrapper .form__area .form .text__area textarea {
+        height: 20vh; }
+    .contact .contact__info .form-map__wrapper .personal-informations {
+      font-size: 1.6rem; }
+      .contact .contact__info .form-map__wrapper .personal-informations h2 {
+        font-size: 3rem; }
+    .contact .contact__info #map {
+      height: 25vh; } }
 
 @media (max-width: 320px) {
   .contact .contact .form-map__wrapper .personal-informations {
