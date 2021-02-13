@@ -88,8 +88,17 @@ projectsListCompany.forEach((el) => {
     // console.log(projectsTitle);
     projectsTitleCompany.textContent = bgTitle;
     projectsTitleCompany.style.color = " #08fdd7";
+  });
 
-    // projectsTitle = bgTitle;
+  el.addEventListener("touchstart", (e) => {
+    let bgCompany = el.getAttribute("data-companyBg");
+    let bgTitle = el.textContent;
+    console.log(bgTitle);
+    projectsCompany.style.background = `url(../../img/projects/${bgCompany}) no-repeat center /cover`;
+
+    // console.log(projectsTitle);
+    projectsTitleCompany.textContent = bgTitle;
+    projectsTitleCompany.style.color = " #08fdd7";
   });
 
   el.addEventListener("mouseout", () => {
@@ -98,7 +107,7 @@ projectsListCompany.forEach((el) => {
     projectsTitleCompany.style.color = "#fff";
   });
 
-  el.addEventListener("touchend", () => {
+  el.addEventListener("touchend", (e) => {
     projectsCompany.style.background = `url(../../img/office.jpg) no-repeat center /cover`;
     projectsTitleCompany.textContent = "Company Projects";
     projectsTitleCompany.style.color = "#fff";
